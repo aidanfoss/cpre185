@@ -1,0 +1,12 @@
+printf("The value of 77/5 is %lf, using integer math\n", integerResult);
+should be
+printf("The value of 77/5 is %d, using integer math\n", integerResult);
+because %d is how to call ints
+
+printf("The value of 2+3 is %d\n");
+is missing its integer call, so it defaults to 0
+
+printf("The value 1.0/22.0 is %d\n", decimalResult);
+should be
+printf("The value 1.0/22.0 is %f\n", decimalResult);
+because %f (float) is what you use to call a double
